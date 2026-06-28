@@ -1,0 +1,74 @@
+/* styles.css */
+:root {
+  --mango-size: 50px;
+  --mango-color: #ffa07a;
+  --gun-color: #666;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+#mango-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.mango {
+  position: absolute;
+  width: var(--mango-size);
+  height: var(--mango-size);
+  background-color: var(--mango-color);
+  border-radius: 50%;
+  animation: fall 2s linear;
+}
+
+@keyframes fall {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 100vh;
+  }
+}
+
+.gun {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--gun-color);
+  animation: shoot 0.5s linear;
+}
+
+@keyframes shoot {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100px);
+  }
+}
