@@ -1,4 +1,3 @@
-Copy
 // script.js
 const produceMangosButton = document.getElementById('produce-mangos');
 const shootGunsButton = document.getElementById('shoot-guns');
