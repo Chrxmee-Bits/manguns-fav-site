@@ -1,26 +1,14 @@
 // script.js
-const produceMangosButton = document.getElementById('produce-mangos');
-const shootGunsButton = document.getElementById('shoot-guns');
-const mangoContainer = document.getElementById('mango-container');
-const gunSound = document.getElementById('gun-sound');
-
-produceMangosButton.addEventListener('click', () => {
-  const mango = document.createElement('div');
-  mango.classList.add('mango');
-  mango.style.left = ${Math.random() * (window.innerWidth - 50)}px;
-  mangoContainer.appendChild(mango);
-  mango.addEventListener('animationend', () => {
-    mango.remove();
-  });
+// add event listener to mango button
+document.querySelector('.mango-button').addEventListener('click', () => {
+  // add sound effect
+  const audio = new Audio('mango.mp3.mp3');
+  audio.play();
 });
 
-shootGunsButton.addEventListener('click', () => {
-  gunSound.play();
-  const gun = document.createElement('div');
-  gun.classList.add('gun');
-  gun.style.top = ${Math.random() * (window.innerHeight - 20)}px;
-  mangoContainer.appendChild(gun);
-  gun.addEventListener('animationend', () => {
-    gun.remove();
-  });
+// add event listener to music button
+document.querySelector('.music-button').addEventListener('click', () => {
+  // add sound effect
+  const audio = new Audio('mango.mp3');
+  audio.play();
 });
