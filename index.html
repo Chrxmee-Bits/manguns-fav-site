@@ -1,22 +1,44 @@
 <!-- index.html -->
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>mango website</title>
+  <title>manguns's mango shop</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>mango website</h1>
-  </header>
+  <header role="banner">mango</header>
   <main>
-    <button id="produce-mangos" aria-label="produce mangos">produce mangos</button>
-    <button id="shoot-guns" aria-label="shoot guns">shoot guns</button>
-    <div id="mango-container" aria-live="polite" aria-atomic="true"></div>
-    <audio id="gun-sound" src="gun.mp3" preload="auto"></audio>
+    <div class="mango-container">
+      <button class="mango-button" aria-label="mango button">mango</button>
+      <ul class="mango-list" role="list">
+        <li>tutorial: pick up mangos</li>
+        <li>use the totally not real right front of you mango button</li>
+        <li>and go crazy over 67 mangos. bai</li>
+      </ul>
+    </div>
+    <div class="leaderboard">
+      <h2>leaderboard</h2>
+      <ul class="leaderboard-list" role="list">
+        <li>manguns - produced 69 mangos</li>
+        <li>chrxmee - produced 67 mangos</li
+      </ul>
+    </div>
+    <div class="library">
+      <h2>library</h2>
+      <ul class="library-list" role="list">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </ul>
+    </div>
+    <div class="producer">
+      <h2>producer</h2>
+      <button class="music-button" aria-label="music button">music</button>
+    </div>
+    <div class="mango-fall"></div>
   </main>
-  <script src="script.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
